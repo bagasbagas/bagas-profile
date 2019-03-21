@@ -14,11 +14,11 @@
     <link rel="icon" href="assets/images/bp.png"> 
 </head> 
 
-<body>    
+<body id="profile">    
     <header class="header">
         <div class="top-bar container-fluid">
             <div class="actions">
-                <a class="btn" href="#"><i class="fas fa-download" aria-hidden="true"></i> Download My Resume</a>
+                <a class="btn" onclick="printDiv('profile')"><i class="fas fa-download" aria-hidden="true"></i> Download My Resume</a>
             </div>
             <ul class="social list-inline">
                 <li class="list-inline-item"><a href="https://www.instagram.com/bagas_prakasa14/?hl=id"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
@@ -198,7 +198,7 @@
                 </div>
             </div>            
         </section>
-        <section id="portfolio-section" class="portfolio-section section">
+        <section id="portfolio-section" class="portfolio-section section" >
             <h2 class="section-title">My Project</h2>
             <ul id="filters" class="filters clearfix">
                 <li class="type active" data-filter="*">All</li>
@@ -275,6 +275,15 @@
 
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="assets/js/demo/style-switcher.js"></script>     
+    <script type="text/javascript">
+        function printDiv(divName) {
+             var printContents = document.getElementById(divName).innerHTML;
+             var originalContents = document.body.innerHTML;
+             document.body.innerHTML = printContents;
+             window.print();
+             document.body.innerHTML = originalContents;
+        }
+        </script>  
 </body>
 </html> 
 
