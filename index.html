@@ -13,7 +13,48 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
     <link rel="icon" href="assets/images/bp.png"> 
 </head> 
+<style>
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto;
+  margin : 20px;
+}
+
+/* The Close Button */
+.close,.close1,.close2,.close3 ,.close4 ,.close5 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close,.close1,.close2,.close3,.close4,.close5:hover,
+.close,.close1,.close2,.close3,.close4,.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 <body id="profile">    
     <header class="header">
         <div class="top-bar container-fluid">
@@ -109,8 +150,7 @@
                     </div>
                 </div>
             </div>            
-        </section>
-        
+        </section>        
         <section id="education-section" class="education-section section">
             <h2 class="section-title">Education</h2>
             <div class="row">
@@ -209,42 +249,42 @@
                 <div class="item cms col-lg-4 col-6">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-fluid" src="assets/images/portfolio/madurasa_cms.png" alt="" />
+                           <button id="myBtn" style="border:none;"> <img class="img-fluid" src="assets/images/portfolio/madurasa_cms.png" alt="" /></button>
                         </figure> 
                     </div>
                 </div>
                 <div class="item cms col-lg-4 col-6">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-fluid" src="assets/images/portfolio/cms_carsworld.png" alt="" />
+                           <button id="myBtn1" style="border:none;"> <img class="img-fluid" src="assets/images/portfolio/cms_carsworld.png" alt="" /></button>
                         </figure> 
                     </div>
                 </div>   
                 <div class="item cms col-lg-4 col-6">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-fluid" src="assets/images/portfolio/cms_artwork.png" alt="" />
+                            <button id="myBtn2" style="border:none;"><img class="img-fluid" src="assets/images/portfolio/cms_artwork.png" alt="" /></button>
                         </figure> 
                     </div>
                 </div>
                 <div class="item web col-lg-4 col-6">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-fluid" src="assets/images/portfolio/web_kredigram.png" alt="" />
+                            <button id="myBtn3" style="border:none;"><img class="img-fluid" src="assets/images/portfolio/web_kredigram.png" alt="" /></button>
                         </figure> 
                     </div>
                 </div> 
                 <div class="item web col-lg-4 col-6">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-fluid" src="assets/images/portfolio/web_ximpli.png" alt="" />
+                            <button id="myBtn4" style="border:none;"><img class="img-fluid" src="assets/images/portfolio/web_ximpli.png" alt="" /></button>
                         </figure> 
                     </div>
                 </div>
                 <div class="item web col-lg-4 col-6">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-fluid" src="assets/images/portfolio/web_ayocicil.png" alt="" />
+                             <button id="myBtn5" style="border:none;"><img class="img-fluid" src="assets/images/portfolio/web_ayocicil.png" alt="" /></button>
                         </figure> 
                     </div>
                 </div>            
@@ -261,6 +301,67 @@
                 </div><!--//diaplog-->
             </div><!--//intro-->
         </section><!--//section-->
+
+        <div id="myModal" class="modal">
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+				<p>Projects Name : Aplikasi Redeem Voucher Madurasa</p>
+				<p>Details : Aplikasi Redeem Voucher , untuk redeem pulsa ataupun barang impian lainnya</p>
+				<p>Period : Januari 2018 - Mei 2018</p>
+				<p>Technology / tools used :MySQL, HTML, CSS, PHP , JS</p>
+				<p>Role :CMS Developer</p>
+		  </div>
+		</div>
+		<div id="myModal1" class="modal">
+		  <div class="modal-content">
+		    <span class="close1">&times;</span>
+				<p>Projects Name : Aplikasi Carsworld</p>
+				<p>Details : Aplikasi ini digunakan untuk memfalitasi suatu perusahaan otomotif, seperti di bidang finance, jual beli mobil, ataupun service mobil </p>
+				<p>Period : Januari 2017 - Januari 2018</p>
+				<p>Technology / tools used :MySQL, HTML, CSS, PHP , JS, GIT</p>
+				<p>Role :CMS Developer</p>
+		  </div>
+		</div>
+		<div id="myModal2" class="modal">
+		  <div class="modal-content">
+		    <span class="close2">&times;</span>
+				<p>Projects Name : Aplikasi Artwork Patron </p>
+				<p>Details : Aplikasi ini digunakan untuk dalam hal pelelangan lukisan</p>
+				<p>Period : Januari 2017 - Maret 2018</p>
+				<p>Technology / tools used :MySQL, HTML, CSS, PHP , JS</p>
+				<p>Role :CMS Developer</p>
+		  </div>
+		</div>		
+		<div id="myModal3" class="modal">
+		  <div class="modal-content">
+		    <span class="close3">&times;</span>
+				<p>Projects Name : Krediram </p>
+				<p>Details : Aplikasi ini digunakan dalam hal remitansi</p>
+				<p>Period : April 2018 - Agustus 2018</p>
+				<p>Technology / tools used :MySQL, HTML, CSS, PHP , JS</p>
+				<p>Role :WEB Developer</p>
+		  </div>
+		</div>
+		<div id="myModal4" class="modal">
+		  <div class="modal-content">
+		    <span class="close4">&times;</span>
+				<p>Projects Name : Ximpli </p>
+				<p>Details :Membuat Company Profile Perusahaan </p>
+				<p>Period : September 2018 - Oktober 2018</p>
+				<p>Technology / tools used :MySQL, HTML, CSS, PHP , JS</p>
+				<p>Role :WEB Developer</p>
+		  </div>
+		</div>
+		<div id="myModal5" class="modal">
+		  <div class="modal-content">
+		    <span class="close5">&times;</span>
+				<p>Projects Name : Ayocicil </p>
+				<p>Details :Membuat Web Untuk Pengajuan Pembiayaan </p>
+				<p>Period : Januari 2019 - Febuari 2019</p>
+				<p>Technology / tools used :MySQL, HTML, CSS, PHP , JS</p>
+				<p>Role :WEB Developer</p>
+		  </div>
+		</div>
         
     </div>        
     <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
@@ -283,7 +384,83 @@
              window.print();
              document.body.innerHTML = originalContents;
         }
+        
         </script>  
+        <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+var btn4 = document.getElementById("myBtn4");
+var btn5 = document.getElementById("myBtn5");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close1")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
+var span5 = document.getElementsByClassName("close5")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+btn5.onclick = function() {
+  modal5.style.display = "block";
+}
+
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+span5.onclick = function() {
+  modal5.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html> 
 
